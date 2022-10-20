@@ -8,6 +8,8 @@
 //     </Fragment>
 //   )
 // }
+import PropTypes from 'prop-types';
+
 
 const newMessage = {
   message: 'Hola Mundo',
@@ -18,7 +20,10 @@ const getSuma = (num1, num2) => {
   return num1 + num2;
 }
 
-export const FirstApp = ({title='título por defecto'}) => {
+export const FirstApp = ({title, subTitle}) => {
+  // if(!title){
+  //   throw new Error('El título no existe');
+  // }
   return (
     <>
       <code>{ JSON.stringify(newMessage) }</code>
@@ -27,4 +32,8 @@ export const FirstApp = ({title='título por defecto'}) => {
       <h2>{ title }</h2>
     </>
   )
+}
+
+FirstApp.propTypes = {
+  title: PropTypes.string.isRequired
 }

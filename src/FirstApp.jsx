@@ -30,10 +30,15 @@ export const FirstApp = ({title, subTitle}) => {
       <p>Este es un ejemplo de párrafo</p>
       <h1>{getSuma(3,5)}</h1>
       <h2>{ title }</h2>
+      <h2>{ subTitle }</h2>
     </>
   )
 }
 
 FirstApp.propTypes = {
   title: PropTypes.string.isRequired
+}
+
+FirstApp.defaultProps = {
+  subTitle: 'no hay subtitulo'
 }

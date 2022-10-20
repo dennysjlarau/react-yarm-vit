@@ -18,12 +18,13 @@ const getSuma = (num1, num2) => {
   return num1 + num2;
 }
 
-export const FirstApp = () => {
+export const FirstApp = ({title='título por defecto'}) => {
   return (
     <>
       <code>{ JSON.stringify(newMessage) }</code>
       <p>Este es un ejemplo de párrafo</p>
       <h1>{getSuma(3,5)}</h1>
+      <h2>{ title }</h2>
     </>
   )
 }

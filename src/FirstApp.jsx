@@ -9,11 +9,21 @@
 //   )
 // }
 
+const newMessage = {
+  message: 'Hola Mundo',
+  title: 'Dennys Lara',
+};
+
+const getSuma = (num1, num2) => {
+  return num1 + num2;
+}
+
 export const FirstApp = () => {
   return (
     <>
-      <h2>Dennys Javier Lara Uquillas</h2>
+      <code>{ JSON.stringify(newMessage) }</code>
       <p>Este es un ejemplo de párrafo</p>
+      <h1>{getSuma(3,5)}</h1>
     </>
   )
 }

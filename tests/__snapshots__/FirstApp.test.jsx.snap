@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas Unitarias: de FirstApp Prueba: del snapshot 1`] = `
+<div>
+  <code>
+    {"message":"Hola Mundo","title":"Dennys Lara"}
+  </code>
+  <p>
+    Este es un ejemplo de párrafo
+  </p>
+  <h1>
+    8
+  </h1>
+  <h2>
+    título de prueba
+  </h2>
+  <h2>
+    no hay subtitulo
+  </h2>
+</div>
+`;
